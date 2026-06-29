@@ -488,8 +488,10 @@ export default function Home() {
                  <div className="size-6 bg-[#22c55e] rounded flex items-center justify-center text-black font-black text-xs shrink-0">X</div>
                </div>
                <span className="text-xs text-zinc-400 mt-2 block">March 03, 2026</span>
-               <div className="mt-4 flex items-center gap-2 text-[10px] font-bold text-[#22c55e] uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
-                  View Certificate &rarr;
+               <div className="mt-4 flex items-center gap-2 text-[10px] font-bold text-zinc-400 group-hover:text-[#22c55e] uppercase tracking-widest transition-colors">
+                  <span className="bg-white/5 px-2.5 py-1.5 rounded border border-white/10 group-hover:border-[#22c55e]/30 group-hover:bg-[#22c55e]/10 transition-colors flex items-center gap-1.5">
+                    View Certificate <ArrowRight size={12} weight="bold" />
+                  </span>
                </div>
              </Link>
              <div className="absolute bottom-[50%] left-[42%] w-[2px] h-[45px] bg-white/10 z-10" />
@@ -514,8 +516,10 @@ export default function Home() {
                  </div>
                </div>
                <span className="text-xs text-zinc-400 mt-2 block">March 30, 2026</span>
-               <div className="mt-4 flex items-center gap-2 text-[10px] font-bold text-[#3b82f6] uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
-                  View Certificate &rarr;
+               <div className="mt-4 flex items-center gap-2 text-[10px] font-bold text-zinc-400 group-hover:text-[#3b82f6] uppercase tracking-widest transition-colors">
+                  <span className="bg-white/5 px-2.5 py-1.5 rounded border border-white/10 group-hover:border-[#3b82f6]/30 group-hover:bg-[#3b82f6]/10 transition-colors flex items-center gap-1.5">
+                    View Certificate <ArrowRight size={12} weight="bold" />
+                  </span>
                </div>
              </Link>
 
@@ -527,8 +531,10 @@ export default function Home() {
                  <div className="size-6 bg-[#84bd00] rounded flex items-center justify-center text-white font-black text-xs shrink-0"><ChartBar size={14} weight="bold" /></div>
                </div>
                <span className="text-xs text-zinc-400 mt-2 block">June 25, 2026</span>
-               <div className="mt-4 flex items-center gap-2 text-[10px] font-bold text-[#84bd00] uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
-                  View Certificate &rarr;
+               <div className="mt-4 flex items-center gap-2 text-[10px] font-bold text-zinc-400 group-hover:text-[#84bd00] uppercase tracking-widest transition-colors">
+                  <span className="bg-white/5 px-2.5 py-1.5 rounded border border-white/10 group-hover:border-[#84bd00]/30 group-hover:bg-[#84bd00]/10 transition-colors flex items-center gap-1.5">
+                    View Certificate <ArrowRight size={12} weight="bold" />
+                  </span>
                </div>
              </Link>
              <div className="absolute bottom-[50%] left-[74%] w-[2px] h-[45px] bg-white/10 z-10" />
@@ -546,8 +552,10 @@ export default function Home() {
                  <div className="size-6 bg-[#3b82f6] rounded flex items-center justify-center text-white font-black text-xs shrink-0"><Lightbulb size={14} weight="bold" /></div>
                </div>
                <span className="text-xs text-zinc-400 mt-2 block">June 27, 2026</span>
-               <div className="mt-4 flex items-center gap-2 text-[10px] font-bold text-[#3b82f6] uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
-                  View Certificate &rarr;
+               <div className="mt-4 flex items-center gap-2 text-[10px] font-bold text-zinc-400 group-hover:text-[#3b82f6] uppercase tracking-widest transition-colors">
+                  <span className="bg-white/5 px-2.5 py-1.5 rounded border border-white/10 group-hover:border-[#3b82f6]/30 group-hover:bg-[#3b82f6]/10 transition-colors flex items-center gap-1.5">
+                    View Certificate <ArrowRight size={12} weight="bold" />
+                  </span>
                </div>
              </Link>
 
