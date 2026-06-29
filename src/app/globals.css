@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+@theme {
+  --color-zinc-950: #09090b;
+  --color-zinc-900: #18181b;
+  --color-zinc-800: #27272a;
+  --color-zinc-700: #3f3f46;
+  --color-zinc-600: #52525b;
+  --color-zinc-500: #71717a;
+  --color-zinc-400: #a1a1aa;
+  --color-zinc-300: #d4d4d8;
+  --color-zinc-200: #e4e4e7;
+  --color-zinc-100: #f4f4f5;
+  --color-zinc-50: #fafafa;
+  
+  /* Neon Accents */
+  --color-neon-purple: #8b5cf6; /* Violet 500 */
+  --color-neon-blue: #3b82f6; /* Blue 500 */
+  --color-neon-pink: #d946ef; /* Fuchsia 500 */
+
+  --color-background: #0d0e15; /* Deep Navy Dark Background */
+  --color-foreground: #ffffff;
+  --color-card: #151620; /* Slightly lighter for cards */
+  --color-card-hover: #1c1d29;
+  
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Consolas, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  *, ::before, ::after {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* subtle noise or grain can be added here if needed, but solid is fine */
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-neon-purple to-neon-blue drop-shadow-[0_0_15px_rgba(139,92,246,0.6)];
+  }
+  
+  .text-glow-purple {
+    @apply drop-shadow-[0_0_20px_rgba(139,92,246,0.8)];
+  }
+
+  .text-glow-blue {
+    @apply drop-shadow-[0_0_20px_rgba(59,130,246,0.8)];
+  }
+  
+  .glass-card-dark {
+    @apply bg-[#151620]/60 backdrop-blur-xl rounded-[1.5rem] p-6 border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.3)] transition-all duration-300;
+  }
+
+  .glass-card-dark:hover {
+    @apply bg-[#1c1d29]/70 border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.4)];
+  }
+
+  .glass-panel-dark {
+    @apply relative overflow-hidden bg-[#151620]/60 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.3)];
+  }
+
+  .neon-glow {
+    @apply absolute -z-10 rounded-full blur-[100px] opacity-40;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  @keyframes orbit {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-orbit-slow {
+    animation: orbit 60s linear infinite;
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
