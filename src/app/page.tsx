@@ -6,6 +6,7 @@ import { ArrowRight, DownloadSimple, MapPin, GraduationCap, Crosshair, Target, C
 import BorderGlow from "@/components/ui/BorderGlow";
 import TiltedCard from "@/components/ui/TiltedCard";
 import StarBorder from "@/components/ui/StarBorder";
+import ContactForm from "@/components/ui/ContactForm";
 import { MagicCard, GlobalSpotlight } from "@/components/ui/MagicCard";
 import { useRef } from "react";
 
@@ -652,35 +653,7 @@ export default function Home() {
 
         <div className="lg:col-span-7 flex flex-col justify-end">
           <MagicCard className="rounded-[1.5rem] w-full" glowColor="236, 72, 153">
-            <form className="glass-card-dark !p-8 flex flex-col gap-4 bg-[#151620] !border-none !bg-transparent h-full w-full">
-              <span className="text-[10px] font-bold text-white uppercase tracking-widest mb-2">CONTACT</span>
-              <input 
-                type="text" 
-                placeholder="Name" 
-                className="w-full bg-[#0d0e15] border border-white/5 rounded-lg px-4 py-3.5 text-white placeholder:text-zinc-600 focus:outline-none focus:border-[#a855f7] transition-all text-sm shadow-inner"
-              />
-              <input 
-                type="email" 
-                placeholder="Email" 
-                className="w-full bg-[#0d0e15] border border-white/5 rounded-lg px-4 py-3.5 text-white placeholder:text-zinc-600 focus:outline-none focus:border-[#a855f7] transition-all text-sm shadow-inner"
-              />
-              <input 
-                type="text" 
-                placeholder="Subject" 
-                className="w-full bg-[#0d0e15] border border-white/5 rounded-lg px-4 py-3.5 text-white placeholder:text-zinc-600 focus:outline-none focus:border-[#a855f7] transition-all text-sm shadow-inner"
-              />
-              <textarea 
-                rows={5}
-                placeholder="Message" 
-                className="w-full bg-[#0d0e15] border border-white/5 rounded-lg px-4 py-3.5 text-white placeholder:text-zinc-600 focus:outline-none focus:border-[#a855f7] transition-all resize-none text-sm shadow-inner"
-              ></textarea>
-              
-              <StarBorder as="button" type="button" className="w-full mt-2 rounded-lg" color="#d946ef" speed="4s" thickness={2}>
-                <span className="block w-full px-6 py-4 rounded-lg font-bold text-xs tracking-widest uppercase text-zinc-300 border border-white/10 hover:bg-white/5 transition-all active:scale-[0.98] bg-[#151620]/60 backdrop-blur-sm text-center">
-                  SEND MESSAGE
-                </span>
-              </StarBorder>
-            </form>
+            <ContactForm />
           </MagicCard>
         </div>
       </section>
