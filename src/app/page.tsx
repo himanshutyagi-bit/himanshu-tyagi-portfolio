@@ -23,16 +23,18 @@ export default function Home() {
         <div className="absolute top-[20%] right-0 w-[400px] h-[400px] bg-[#3b82f6]/10 blur-[150px] rounded-full pointer-events-none" />
         
         <div className="flex flex-col gap-6 items-start relative z-10">
-          <div className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-[#151620]/60 text-[10px] font-bold tracking-[0.2em] uppercase text-zinc-300 shadow-xl backdrop-blur-md">
-            <span className="w-1.5 h-1.5 rounded-full bg-zinc-300"></span>
-            DATA ANALYST • BUSINESS INTELLIGENCE • VISUALIZATION
+          <div className="flex flex-col sm:flex-row items-center sm:items-center justify-center sm:justify-start text-center sm:text-left gap-2 px-4 py-2.5 rounded-[2rem] border border-white/10 bg-[#151620]/60 text-[9px] sm:text-[10px] font-bold tracking-[0.15em] sm:tracking-[0.2em] uppercase text-zinc-300 shadow-xl backdrop-blur-md max-w-[95vw]">
+            <div className="flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-zinc-300 shrink-0 hidden sm:block"></span>
+              <span className="leading-[1.6]">DATA ANALYST • BUSINESS INTELLIGENCE • VISUALIZATION</span>
+            </div>
           </div>
           
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-6xl sm:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.9] text-white"
+            className="text-[11.5vw] sm:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.9] text-white"
           >
             COMMERCE <br />
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#60a5fa] via-[#a855f7] to-[#c084fc] drop-shadow-[0_0_15px_rgba(168,85,247,0.5)]">BRAIN.</span><br />
@@ -45,13 +47,13 @@ export default function Home() {
           </p>
           
           <div className="flex flex-wrap items-center gap-4 mt-2">
-            <MagicCard className="rounded-lg w-fit" glowColor="139, 92, 246">
-              <a href="#projects" className="bg-gradient-to-r from-[#8b5cf6] to-[#60a5fa] text-white px-6 py-3 rounded-lg font-bold text-xs uppercase tracking-widest hover:opacity-90 transition-opacity active:scale-[0.98] flex items-center gap-2 shadow-[0_0_30px_-5px_rgba(139,92,246,0.6)]">
+            <MagicCard className="rounded-lg w-full sm:w-fit" glowColor="139, 92, 246">
+              <a href="#projects" className="bg-gradient-to-r from-[#8b5cf6] to-[#60a5fa] text-white w-full sm:w-auto justify-center px-6 py-3.5 sm:py-3 rounded-lg font-bold text-xs uppercase tracking-widest hover:opacity-90 transition-opacity active:scale-[0.98] flex items-center gap-2 shadow-[0_0_30px_-5px_rgba(139,92,246,0.6)]">
                 VIEW PROJECTS <ArrowRight weight="bold" />
               </a>
             </MagicCard>
-            <MagicCard className="rounded-lg w-fit" glowColor="56, 189, 248">
-              <Link href="/resume" className="px-6 py-3 rounded-lg font-bold text-xs uppercase tracking-widest text-zinc-300 border border-white/10 hover:bg-white/5 transition-all active:scale-[0.98] flex items-center gap-2 bg-[#151620]/60 backdrop-blur-sm h-full w-full">
+            <MagicCard className="rounded-lg w-full sm:w-fit" glowColor="56, 189, 248">
+              <Link href="/resume" className="w-full sm:w-auto justify-center px-6 py-3.5 sm:py-3 rounded-lg font-bold text-xs uppercase tracking-widest text-zinc-300 border border-white/10 hover:bg-white/5 transition-all active:scale-[0.98] flex items-center gap-2 bg-[#151620]/60 backdrop-blur-sm h-full">
                 <DownloadSimple weight="bold" /> DOWNLOAD RESUME
               </Link>
             </MagicCard>
