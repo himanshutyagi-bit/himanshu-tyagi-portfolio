@@ -250,7 +250,17 @@ export default function Home() {
       <section id="skills" className="py-20 relative w-full flex flex-col items-center overflow-hidden">
         {/* Core background glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-neon-purple/5 blur-[150px] rounded-full pointer-events-none animate-pulse" />
-             <motion.div 
+        
+        <div className="flex flex-col items-center text-center gap-4 mb-12 lg:mb-16 z-10 relative px-4 mt-8">
+           <div className="flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 text-[10px] font-bold text-zinc-400 uppercase tracking-widest">
+             <Gear size={14} className="text-[#3b82f6]" weight="bold" /> TECHNICAL ARSENAL
+           </div>
+           <h2 className="text-4xl md:text-5xl font-black text-white tracking-tight uppercase">
+             THE TOOLS I <span className="text-gradient">THINK WITH</span>
+           </h2>
+        </div>
+
+        <motion.div 
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1 }}
