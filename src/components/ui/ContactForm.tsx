@@ -27,7 +27,7 @@ export default function ContactForm() {
     setIsSubmitting(true);
     setError("");
 
-    const data = new FormData();
+    const data = new URLSearchParams();
     data.append("Name", formData.Name);
     data.append("Email", formData.Email);
     data.append("Subject", formData.Subject);
