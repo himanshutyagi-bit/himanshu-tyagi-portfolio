@@ -82,7 +82,7 @@ export default function Home() {
                 </div>
                 
                 {/* Top Left Floating Code */}
-                <div className="absolute top-12 left-2 sm:-left-12 lg:-left-20 glass-card-dark !bg-[#151620]/80 backdrop-blur-xl p-4 rounded-xl border border-white/10 shadow-2xl flex flex-col gap-3 w-[180px] z-20">
+                <div className="absolute top-[60%] sm:top-12 left-2 sm:-left-12 lg:-left-20 glass-card-dark !bg-[#151620]/80 backdrop-blur-xl p-4 rounded-xl border border-white/10 shadow-2xl flex flex-col gap-3 w-[180px] z-20">
                    <p className="text-xs text-white font-mono font-medium">Top Skills</p>
                    <div className="flex flex-col gap-1 w-full">
                      <div className="flex justify-between items-center w-full">
