@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import StarBorder from "@/components/ui/StarBorder";
 import { CheckCircle } from "@phosphor-icons/react";
 
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw8XioDHboh17fZkmmDzdqrG2gb4Ovz9_nbJNgdDut-nnWU2EMMXd4ikVBF5K4fAb3v/exec";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxEJSJ_roYl1rO2wRVIVOPyfZr2EtrzGSqMB7OZCB60a9jWlk_7N5LWUoCWjk_tVeQC_Q/exec";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
