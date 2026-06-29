@@ -82,7 +82,7 @@ export default function Home() {
                 </div>
                 
                 {/* Top Left Floating Code */}
-                <div className="absolute top-12 -left-12 lg:-left-20 glass-card-dark !bg-[#151620]/80 backdrop-blur-xl p-4 rounded-xl border border-white/10 shadow-2xl flex flex-col gap-3 w-[180px] z-20">
+                <div className="absolute top-12 left-2 sm:-left-12 lg:-left-20 glass-card-dark !bg-[#151620]/80 backdrop-blur-xl p-4 rounded-xl border border-white/10 shadow-2xl flex flex-col gap-3 w-[180px] z-20">
                    <p className="text-xs text-white font-mono font-medium">Top Skills</p>
                    <div className="flex flex-col gap-1 w-full">
                      <div className="flex justify-between items-center w-full">
@@ -105,7 +105,7 @@ export default function Home() {
                 </div>
                 
                 {/* Bottom Right Projects Badge */}
-                <div className="absolute bottom-10 -right-8 lg:-right-16 glass-card-dark !bg-[#151620]/80 backdrop-blur-xl p-5 rounded-xl border border-white/10 shadow-2xl flex flex-col gap-1 z-20 min-w-[220px]">
+                <div className="absolute bottom-10 right-2 sm:-right-8 lg:-right-16 glass-card-dark !bg-[#151620]/80 backdrop-blur-xl p-5 rounded-xl border border-white/10 shadow-2xl flex flex-col gap-1 z-20 min-w-[220px]">
                   <span className="text-[11px] text-white font-medium mb-1">Projects Completed</span>
                   <div className="flex items-center gap-3">
                     <span className="text-4xl font-black text-white tracking-tight">08+</span>
