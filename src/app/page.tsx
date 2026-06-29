@@ -354,7 +354,7 @@ export default function Home() {
 
         {/* BOTTOM STATS BAR */}
         <div className="w-full max-w-4xl relative mt-12 p-[1px] rounded-3xl bg-gradient-to-r from-neon-purple via-[#3b82f6] to-neon-purple shadow-[0_0_30px_rgba(139,92,246,0.3)]">
-           <div className="w-full h-full glass-panel-dark rounded-3xl grid grid-cols-2 md:grid-cols-4 divide-x divide-y md:divide-y-0 divide-white/10 p-6 overflow-hidden bg-[#0d0e15]">
+           <div className="w-full h-full glass-panel-dark rounded-3xl grid grid-cols-2 md:grid-cols-4 gap-y-8 md:gap-y-0 md:divide-x md:divide-white/10 p-6 overflow-hidden bg-[#0d0e15]">
              <div className="flex flex-col items-center justify-center py-4">
                <span className="text-4xl font-black text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]">08+</span>
                <span className="text-[10px] text-zinc-500 uppercase tracking-widest font-bold mt-1">PROJECTS</span>
